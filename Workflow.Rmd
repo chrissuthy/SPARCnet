@@ -1,8 +1,42 @@
 ---
-title: "Spatial Capture Recapture Workflow"
-author: "for SPARCnet data"
-date: "January 24, 2018"
-output: html_document
+title: "SPARCnet SCR (I)"
+author: "Chris Sutherland"
+output:
+  rmarkdown::html_document:
+    theme: yeti
+bibliography: all.bib
+csl: ecology.csl
+link-citations: true
 ---
 
-Below are instructions for the formatting and processing of SAPRCnet artificial coverboard array data for a *Spatial Capture-Recapture* (SCR) analysis using the `R` package `oSCR` (@Sutherland2017).
+# Spatial Capture Recapture for SPARCnet data
+
+Below are instructions for the formatting and processing of SAPRCnet artificial coverboard array data for a *Spatial Capture-Recapture* [SCR: @Royle2014scr] analysis using the `R` package `oSCR` [@sutherland2016oscr]. This document will only focus on the basic data structures required to fit the basic SCR model (*SCR0*) and allows you to become familiar with the functionality of the package, inputs and outputs. There are a series of other tutorials related to more detailed data structures and covariates, and I will continue to create more by request. 
+
+The data I will use in the tutorials is a SPARCnet site located in Ithaca New York [@Sutherland2016aco]. It has four standard 50-board ACO arrays and data were collected, following SPARCnet capture-recapture protocol, from Spring 2014 to Spring 2016.
+
+# Making the SCR data objects
+
+There are two distinct data objects we will require
+
+1. The individual detection data (*encounter data file* or *EDF*)
+2. The trapping information (*trap deployment file* or *TDF*)
+
+Here is what the NY EDF looks like: 
+
+```{r}
+rbs.edf <- read.csv("rbs_edf.csv")
+head(rbs.edf)
+```
+
+
+
+Not that this may differ slightly for yours or from the data extracted from the SPARCnet database. However, all SPARCnet capture data, should have, at minimum, the following columns:
+
+- 
+- 
+- 
+- 
+- 
+
+# References
