@@ -1,0 +1,8 @@
+---
+title: "Spatial Capture Recapture Workflow"
+author: "for SPARCnet data"
+date: "January 24, 2018"
+output: html_document
+---
+
+Below are instructions for the formatting and processing of SAPRCnet artificial coverboard array data for a *Spatial Capture-Recapture* (SCR) analysis using the `R` package `oSCR` (@Sutherland2017).
